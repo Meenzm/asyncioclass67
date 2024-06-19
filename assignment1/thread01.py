@@ -1,3 +1,4 @@
+#ส่งการบ้าน01
 # running a function in another thread
 from time import sleep, ctime
 from threading import Thread
