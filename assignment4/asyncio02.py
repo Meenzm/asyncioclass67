@@ -13,7 +13,7 @@ async def main():
     # report a message
     print('main coroutine started')
     # start many tasks
-    started_tasks = [asyncio.create_task(task_coroutine(i) for i in range(10))]
+    started_tasks = [asyncio.create_task(task_coroutine(i)) for i in range(10)]
     #allow some of tasks time to start
     await asyncio.sleep(0.1)
     # get all task
